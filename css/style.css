@@ -2,26 +2,64 @@ html * {
     font-family: Arial;
 }
 
-ul.navbar {
-    list-style-type: none;
+.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #004E89;
 }
 
-li.navbar {
+.navbar a {
     float: left;
-}
-
-li.navbar a.navbar {
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 17;
 }
 
-li.navbar a.navbar:hover {
+.navbar a:hover, .dropdown:hover .dropdown-button {
     background-color: #1A659E;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropdown-button {
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    /*font-family: inherit; /* Important for vertical align on mobile phones */
+    /*margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
