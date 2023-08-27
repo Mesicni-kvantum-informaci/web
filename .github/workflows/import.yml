@@ -14,6 +14,6 @@ jobs:
       - name: git
         run: |
           ls
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email '<>'
-          git submodule update --remote
+          $ git config --global user.name 'GitHub Actions'
+          $ git config --global user.email '<>'
+          $ git submodule update --remote
