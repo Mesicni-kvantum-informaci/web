@@ -1,0 +1,13 @@
+name: Import web-data
+
+on:
+  push:
+
+  workflow_dispatch:
+
+jobs:
+  import-web-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: git submodule update --remote
