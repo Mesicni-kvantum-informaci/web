@@ -1,19 +1,29 @@
+/*          General CSS         */
 html * {
-    font-family: Arial;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.15;
 }
 
+body {
+    margin: 0px 10px;
+}
+
+/*          Navbar CSS          */
 .navbar {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    min-height: 45.5px;
     background-color: #004E89;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
 .navbar a {
     float: left;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 13px 16px 14px;
     text-decoration: none;
     font-size: 17;
 }
@@ -21,6 +31,12 @@ html * {
 .navbar a:hover, .dropdown:hover .dropdown-button {
     background-color: #1A659E;
 }
+
+/*! Potential feature
+.navbar-active a {
+    background-color: ;
+}
+*/
 
 .dropdown {
     float: left;
@@ -32,7 +48,7 @@ html * {
     font-size: 16px;
     border: none;
     outline: none;
-    padding: 14px 16px;
+    padding: 13px 16px 14px;
     background-color: inherit;
     /*font-family: inherit; /* Important for vertical align on mobile phones */
     /*margin: 0; /* Important for vertical align on mobile phones */
@@ -62,4 +78,32 @@ html * {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+/*          Task CSS            */
+.task-headline {
+    padding: 0.2rem 1rem;
+    color: white;
+    background-color: #14BDEBcc;
+    font-weight: 500;
+  }
+
+.task-headline.task-headline-easy {
+    background-color: #68cc21cc;
+}
+
+.task-headline.task-headline-hard {
+    background-color: #14BDEBcc;
+}
+
+.task-headline.task-headline-astronomy {
+    background-color: /*#7209b7*/ #b425d7cc /*#A663CC*/;
+}
+
+.task-headline.task-headline-quantum {
+    background-color: #F64740cc;
+}
+
+.task-headline.task-headline-bonus {
+    background-color: #FEC601cc;
 }

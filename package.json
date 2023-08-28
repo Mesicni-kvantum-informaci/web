@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "html-include-element": "^0.3.0"
+    "jquery": "^3.7.1"
   }
 }
