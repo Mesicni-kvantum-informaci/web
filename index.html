@@ -6,25 +6,25 @@
     <meta charset="UTF-8">
     <meta name="author" content="Vojtěch Kubrycht"/>
     <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://kit.fontawesome.com/83232f501b.js" crossorigin="anonymous"></script>
-    <script type="module" src='https://unpkg.com/html-include-element'></script>
+    <link rel="preload stylesheet"type="text/css" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+    <script rel="preload font" src="https://kit.fontawesome.com/83232f501b.js" crossorigin="anonymous" onload="this.rel='stylesheet'"></script>
+    <script rel="preload" type="module" src='https://unpkg.com/html-include-element'></script>
 </head>
 
 <body>
     <div class="navbar">
-        <a href="index.html"><i class="fa-solid fa-house"></i></a>
-        <a href="zadani/zadani.html"><i class="fa-solid fa-pen-to-square"></i>  Zadání</a>
-        <a href="poradi/poradi.html"><i class="fa-solid fa-trophy"></i>  Pořadí</a>
+        <a href="index.html"><span class="fa-solid fa-house"></span></a>
+        <a href="zadani/zadani.html"><span class="fa-solid fa-pen-to-square"></span>  Zadání</a>
+        <a href="poradi/poradi.html"><span class="fa-solid fa-trophy"></span>  Pořadí</a>
         <div class="dropdown">
-            <button class="dropdown-button"><i class="fa fa-book"></i> Jak řešit? <i class="fa-solid fa-caret-down"></i></button>
+            <button class="dropdown-button"><span class="fa fa-book"></span> Jak řešit? <span class="fa-solid fa-caret-down"></span></button>
             <div class="dropdown-menu">
                 <a href="jakresit/pravidla.html">Pravidla</a>
                 <a href="jakresit/reseni.html">Jak psát řešení</a>
             </div>
         </div>
-        <a href="onas/onas.html"><i class="fa-solid fa-users"></i> O MKi</a>
-        <a href="https://instagram.com/mki_physics" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="onas/onas.html"><span class="fa-solid fa-users"></span> O MKi</a>
+        <a href="https://instagram.com/mki_physics" target="_blank"><span class="fa-brands fa-instagram"></span> Instagram</a>
     </div>
     <h1>Měsíční kvantum informací</h1>
     <h2>TODO Homepage</h2>
