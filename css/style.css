@@ -91,7 +91,7 @@ body {
 .task-headline {
     padding: 0.2rem 1rem;
     color: white;
-    background-color: #14BDEBcc;
+    background-color: #14bdebcc;
     font-weight: 500;
   }
 
@@ -100,19 +100,19 @@ body {
 }
 
 .task-headline.task-headline-hard {
-    background-color: #14BDEBcc;
+    background-color: #14bdebcc;
 }
 
 .task-headline.task-headline-astronomy {
-    background-color: /*#7209b7*/ #b425d7cc /*#A663CC*/;
+    background-color: #b425d7cc;
 }
 
 .task-headline.task-headline-quantum {
-    background-color: #F64740cc;
+    background-color: #f64740cc;
 }
 
 .task-headline.task-headline-bonus {
-    background-color: #FEC601cc;
+    background-color: #fec601cc;
 }
 
 .task-points {
