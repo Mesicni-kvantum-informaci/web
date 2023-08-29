@@ -115,6 +115,10 @@ body {
     background-color: #FEC601cc;
 }
 
+.task-points {
+    float: right;
+}
+
 /*              Homepage CSS            */
 .home-info, .home-info h1 {
     border-style: solid;

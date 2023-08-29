@@ -6,13 +6,13 @@
     <title>MKi</title>
     <meta charset="UTF-8">
     <meta name="author" content="Vojtěch Kubrycht"/>
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
     <!--Font Awesome for icons-->
     <script rel="preload font" src="https://kit.fontawesome.com/83232f501b.js" crossorigin="anonymous" onload="this.rel='stylesheet'"></script>
     <!--Stylesheet-->
-    <link rel="preload stylesheet"type="text/css" href="/css/style.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload stylesheet"type="text/css" href="../css/style.css" as="style" onload="this.rel='stylesheet'">
     <!--Script for including other htmls-->
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script>
     $(function () {
         var includes = $('[data-include]')
@@ -26,22 +26,22 @@
 
 <body>
     <div class="navbar">
-        <a href="/index.html"><span class="fa-solid fa-house"></span></a>
-        <a href="/zadani/zadani.html"><span class="fa-solid fa-pen-to-square"></span>  Zadání</a>
-        <a href="/poradi/poradi.html"><span class="fa-solid fa-trophy"></span>  Pořadí</a>
+        <a href="../index.html"><span class="fa-solid fa-house"></span></a>
+        <a href="../zadani/zadani.html"><span class="fa-solid fa-pen-to-square"></span>  Zadání</a>
+        <a href="../poradi/poradi.html"><span class="fa-solid fa-trophy"></span>  Pořadí</a>
         <div class="dropdown">
             <button class="dropdown-button"><span class="fa fa-book"></span> Jak řešit? <span class="fa-solid fa-caret-down"></span></button>
             <div class="dropdown-menu" id="jakresit-dropdown">
-                <a href="/jakresit/pravidla.html">Pravidla</a>
-                <a href="/jakresit/reseni.html">Jak psát řešení</a>
+                <a href="../jakresit/pravidla.html">Pravidla</a>
+                <a href="../jakresit/reseni.html">Jak psát řešení</a>
             </div>
         </div>
         <div class="dropdown">
             <button class="dropdown-button"><span class="fa-solid fa-users"></span> O MKi <span class="fa-solid fa-caret-down"></span></button>
             <div class="dropdown-menu" id="onas-dropdown">
-                <a href="/onas/onas.html">Co je MKi?</a>
-                <a href="/onas/historie.html">Historie</a>
-                <a href="/onas/kontakt.html">Kontakt</a>
+                <a href="../onas/onas.html">Co je MKi?</a>
+                <a href="../onas/historie.html">Historie</a>
+                <a href="../onas/kontakt.html">Kontakt</a>
             </div>
         </div>
         <a href="https://instagram.com/mki_physics" target="_blank"><span class="fa-brands fa-instagram"></span> Instagram</a>
@@ -49,7 +49,7 @@
 
     <h1>TODO Zadání</h1>
     <p>Hello world</p>
-    <div data-include="/data-import/ulohy.html"></div>
+    <div data-include="../data-import/ulohy.html"></div>
 </body>
 
 </html>
