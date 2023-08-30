@@ -6,6 +6,10 @@ html * {
 
 body {
     margin: 0px 10px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 /*          Navbar CSS          */
@@ -17,6 +21,7 @@ body {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navbar a {
@@ -135,14 +140,93 @@ body {
 
 */
 
-/*TODO image-tile styling
+.tiles {
+    margin: 20px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    min-height: 1px;
+    position: relative;
 
-.image-tiles {
+    /*border-style: solid;
+    border-color: yellow;*/
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+    /*border-style: solid;*/
 }
 
 .tile {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    -webkit-box-flex: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
 
+    /*border-style: solid;
+    border-color: greenyellow;*/
 }
 
-*/
+.tile a {
+    text-decoration: none;
+}
+
+.tile-block {
+    height: 20rem;
+    position: relative;
+    margin: 0.25rem;
+    margin-top: 2rem;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    transition: transform .25s ease;
+
+    /*border-style: solid;
+    border-color: red;*/
+}
+
+.tile-block:hover {
+    transform: scale(1.05);
+}
+
+.tile-block.batch {
+    background-image: linear-gradient(#00000030, #00000000), url(../images/annaadela3r25.jpg);
+}
+
+.tile-block.task {
+    background-image: linear-gradient(#00000030, #00000000), url(../images/lucier25.jpg);
+}
+
+.tile-block.prize {
+    background-image: linear-gradient(#00000030, #00000000), url(../images/tabler25.jpg);
+}
+
+
+.tile-block .title {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.tile-block .description {
+    background-color: white;
+    max-width: 95%;
+    color: black;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 0.25rem;
+    font-size: .8rem;
+}
