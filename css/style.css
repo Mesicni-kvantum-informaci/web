@@ -5,7 +5,7 @@ html * {
 }
 
 body {
-    margin: 0px 10px;
+    margin: 0px;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -93,12 +93,23 @@ body {
 }
 
 /*          Task CSS            */
+.task {
+    margin-bottom: 32px;
+}
+
 .task-headline {
     padding: 0.2rem 1rem;
     color: white;
     background-color: #14bdebcc;
     font-weight: 500;
-  }
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.task-text {
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
 
 .task-headline.task-headline-easy {
     background-color: #68cc21cc;
@@ -124,24 +135,72 @@ body {
     float: right;
 }
 
+.tag {
+    color: #14bdebcc;
+    margin-right: 16px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.task-headline-easy ~ .tag {
+    color: #68cc21cc;
+}
+
+.task-headline-hard ~ .tag {
+    color: #14bdebcc;
+}
+
+.task-headline-astronomy ~ .tag {
+    color: #b425d7cc;
+}
+
+.task-headline-quantum ~ .tag {
+    color: #f64740cc;
+}
+
+.task-headline-bonus ~ .tag {
+    color: #fec601cc;
+}
+
+.tasks {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 /*              Homepage CSS            */
-.home-info, .home-info h1 {
-    border-style: solid;
+.home-info {
     text-align: center;
     padding: 10px 20px;
-    margin: 10px 300px;
+    margin-top: 32px;
+    background-color: #118AB2;
+    color: #fff;
 }
 
-/*TODO home-info link styling
+.home-info h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+    margin: auto;
+}
 
 .home-info a {
-
+    text-decoration: none;
+    color: #004385;
+    font-style: italic;
+    white-space: nowrap;
 }
 
-*/
+.home-info p {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
 
 .tiles {
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     flex: 0 0 100%;
     max-width: 100%;
     -webkit-box-flex: 0;
