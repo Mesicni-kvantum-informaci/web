@@ -1,7 +1,6 @@
 /*          General CSS         */
 html * {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.15;
 }
 
 body {
@@ -9,7 +8,7 @@ body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.15;
 }
 
 /*          Navbar CSS          */
@@ -104,11 +103,13 @@ body {
     font-weight: 500;
     margin-top: 0px;
     margin-bottom: 8px;
+    line-height: 1.1;
 }
 
 .task-text {
     margin-top: 0px;
     margin-bottom: 16px;
+    line-height: 1.5 !important;
 }
 
 .task-headline.task-headline-easy {
@@ -165,6 +166,61 @@ body {
 .tasks {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.task-frame {
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    padding-top: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.task-frame-title {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.task-frame-content {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.task-image-grid {
+    flex: 0 0 100%;
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    min-height: 1px;
+    position: relative;
+    margin-bottom: 10px;
+
+    /*border-style: solid;
+    border-color: greenyellow;*/
+}
+
+.task-image-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    /*border-style: solid;
+    border-color: red;*/
+}
+
+.task-image-row img {
+    flex: 0 0 16.666666%;
+    max-width: 16.666666%;
+    -webkit-box-flex: 0;
+    padding: 5px;
+    position: relative;
+    min-height: 1px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+
+    /*border-style: solid;
+    border-color: blue;*/
 }
 
 /*              Homepage CSS            */
@@ -288,4 +344,9 @@ body {
     right: 1rem;
     padding: 0.25rem;
     font-size: .8rem;
+}
+
+/*              MathJax CSS            */
+mjx-container[display="true"] {
+    line-height: 0 !important;
 }
