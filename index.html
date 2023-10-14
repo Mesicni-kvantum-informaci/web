@@ -22,83 +22,139 @@
         })
       })
     </script>
+
+    <!--!!Temporary MathJax-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="../js/mathjax-config.js" defer></script>
+    <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
-    <!-- Top navbar -->
-    <div class="navbar">
-        <a href="index.html"><span class="fa-solid fa-house"></span></a>
-        <a href="zadani/zadani.html"><span class="fa-solid fa-pen-to-square"></span>  Zadání</a>
-        <a href="poradi/poradi.html"><span class="fa-solid fa-trophy"></span>  Pořadí</a>
-        <div class="dropdown">
-            <button class="dropdown-button"><span class="fa fa-book"></span> Jak řešit? <span class="fa-solid fa-caret-down"></span></button>
-            <div class="dropdown-menu" id="jakresit-dropdown">
-                <a href="jakresit/pravidla.html">Pravidla</a>
-                <a href="jakresit/reseni.html">Jak psát řešení</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropdown-button"><span class="fa-solid fa-users"></span> O MKi <span class="fa-solid fa-caret-down"></span></button>
-            <div class="dropdown-menu" id="onas-dropdown">
-                <a href="onas/onas.html">Co je MKi?</a>
-                <a href="onas/historie.html">Historie</a>
-                <a href="onas/kontakt.html">Kontakt</a>
-            </div>
-        </div>
-        <a href="https://instagram.com/mki_physics" target="_blank"><span class="fa-brands fa-instagram"></span> Instagram</a>
-    </div>
-
-    <!-- Homepage MKi info -->
-    <div class="home-info">
-        <h1>Měsíční Kvantum informací</h1>
-        <p>
-            Měsíční kvantum informací (zkráceně MKi) je fyzikální korespondenční seminář probíhající na <a href="https://gybu.cz" target="_blank">Gymnáziu Budějovická</a>,
-            který má za účel prezentovat fyziku s minimálním množstvím potřebné matematiky. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque pretium lectus id turpis. Fusce aliquam vestibulum ipsum. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam.
-        </p>
-    </div>
-
-    <!-- Image tiles w/ description -->
-    <div class="tiles">
-        <div class="row">
-            <div class="tile">
-                <a href="zadani/zadani.html">
-                    <div class="tile-block batch">
-                        <div class="title">
-                            6 sérií ročně
-                        </div>
-                        <div class="description">
-                            Startujeme se začátkem školního roku, končíme před prázdninami. Vždy běží jedna série po dobu dvou kalendářních měsíců. Jakmile skončí, opravíme vaše řešení a pošleme vám jej zpět obodované. Dostáváte takto zpětnou vazbu již v průběhu soutěže.
-                        </div>
+    <p><span class="fa-regular fa-calendar"></span> Termín: 31. 9. 2023</p>
+    <div class="tasks">
+        <div class="task">
+            <h2 class="task-headline task-headline-easy"><span class="fa-regular fa-image"></span> U1 Motorová<small class="task-points">(? body)</small></h2>
+            <div>
+                <p class="task-text">
+                    Ke každému typu motoru z následujícího rámečku přiřaďte rok jeho vynálezu a příslušný obrázek.
+                </p>
+                <div class="task-frame">
+                    <p class="task-frame-title">Motory</p>
+                    <p class="task-frame-content">
+                        piezoelektrický motor, parní motor, raketový motor, elektromotor, proudový motor, Dieselův motor
+                    </p>
+                </div>
+                <div class="task-frame">
+                    <p class="task-frame-title">Roky</p>
+                    <p class="task-frame-content">
+                        1965, 1834, 1939, 1712, 1926, 1897
+                    </p>
+                </div>
+                <div class="task-image-grid">
+                    <div class="task-image-row">
+                        <img src="images/1-U1/proudový_motor.jpg">
+                        <img src="images/1-U1/parní_motor.jpg">
+                        <img src="images/1-U1/elektromotor.jpg">
+                        <img src="images/1-U1/diesel.jpg">
+                        <img src="images/1-U1/raketový_motor.jpg">
+                        <img src="images/1-U1/piezoelectric.jpg">
                     </div>
-                </a>
+                </div>
             </div>
-            <div class="tile">
-                <a href="zadani/zadani.html">
-                    <div class="tile-block task">
-                        <div class="title">
-                            8 příkladů v sérii
-                        </div>
-                        <div class="description">
-                            Dvě jednoduché úlohy (poznávací a kroužkovací), tři pokročilé, nad kterými se musíte více zamyslet, dvě seriálové úlohy s doprovodným textem zabývajícím se kvantovou fyzikou a astronomií a jedna početní úloha jako bonus na závěr.
-                        </div>
-                    </div>
-                </a>
+            <p class="tag"><span class="fa-solid fa-tag"></span> populární fyzika</p>
+        </div>
+        <div class="task">
+            <h2 class="task-headline task-headline-easy"><span class="fa-regular fa-square-check"></span> U2 Svítí Měsíc?<small class="task-points">(? body)</small></h2>
+            <div>
+                <p class="task-text">
+                    Svítí Měsíc?
+                </p>
+                <p class="answer">
+                    a) Ano, vyzařuje vlastní paprsky.
+                </p>
+                <p class="answer">
+                    b) Ano, odráží paprsky od Slunce.
+                </p>
+                <p class="answer">
+                    c) Ano, odráží paprsky od Země.
+                </p>
+                <p class="answer">
+                    d) Ano, všechny výše uvedené možnosti jsou správné.
+                </p>
+                <p class="answer">
+                    e) Ne, žádná z výše uvedených možností není správná.
+                </p>
             </div>
-            <div class="tile">
-                <a href="onas/historie.html">
-                    <div class="tile-block prize">
-                        <div class="title">
-                            Vyhlášení na konci roku
-                        </div>
-                        <div class="description">
-                            V červnu proběhne slavnostní vyhlášení, nejlepší řešitelé každé kategorie obdrží odměnu (typicky naučné knihy, deskové hry a další ...) a pro každého řešitele bude přichystána ročenka, ve které je shrnutý celý průběh ročníku MKi.
-                        </div>
-                    </div>
-                </a>
+            <p class="tag"><span class="fa-solid fa-tag"></span> astronomie</p>
+        </div>
+        <div class="task">
+            <h2 class="task-headline"><span class="fa-regular fa-circle-question"></span> U3 Všechno se mění...<small class="task-points">(? body)</small></h2>
+            <div>
+                <p class="task-text">
+                    Které z následujících konstant nejsou ve skutečnosti konstantní v čase?
+                </p>
+                <p class="answer">
+                    a) Planckova Konstanta
+                </p>
+                <p class="answer">
+                    b) Solární konstanta
+                </p>
+                <p class="answer">
+                    c) Hubbleova konstanta
+                </p>
+                <p class="answer">
+                    d) Konstanta jemné struktury
+                </p>
             </div>
+            <p class="tag"><span class="fa-solid fa-tag"></span> populární fyzika</p>
+        </div>
+        <div class="task">
+            <h2 class="task-headline"><span class="fa-solid fa-magnifying-glass"></span> U4 Obrovské kvantum<small class="task-points">(? body)</small></h2>
+            <div>
+                <p class="task-text">
+                    Co byste očekávali, že by se stalo, kdyby namísto přibližné hodnoty $6,626 \cdot 10^{-34}\,\mathrm{J\cdot s}$ měla Planckova konstanta hodnotu $6,626 \cdot 10^{34}\,\mathrm{J\cdot s}$?
+                </p>
+            </div>
+            <p class="tag"><span class="fa-solid fa-tag"></span> kvantová fyzika</p>
+        </div>
+        <div class="task">
+            <h2 class="task-headline"><span class="fa-regular fa-lightbulb"></span> U5 Přitahuje ho jako magnet!<small class="task-points">(? body)</small></h2>
+            <div>
+                <p class="task-text">
+                    Jak bude vypadat trajektorie elektronu pohybujícího se kolem vodiče tak, jak ukazuje obrázek?
+                </p>
+                <img class="temp-img-class" src="images/1-U5.png">
+            </div>
+            <p class="tag"><span class="fa-solid fa-tag"></span> elektromagnetismus</p>
+        </div>
+        <div class="task">
+            <h2 class="task-headline task-headline-astronomy"><span class="fa-solid fa-user-astronaut"></span> Artemis<small class="task-points">(? body)</small></h2>
+            <div>
+                <p class="task-text">
+                    Napište, jaký je váš názor na tématiku prozkoumávání vesmíru, i když jsme ještě neprozkoumali oceány na Zemi.
+                </p>
+            </div>
+            <p class="tag"><span class="fa-solid fa-tag"></span> astronomie</p>
+        </div>
+        <div class="task">
+            <h2 class="task-headline task-headline-quantum"><span class="fa-brands fa-react"></span> Oppenheimer<small class="task-points">(? body)</small></h2>
+            <div>
+                <p class="task-text">
+                    Proč je možné bez výrazné ztráty výpočetní přesnosti předpokládat, že se jádra v molekulách v porovnání s elektrony vůbec nehýbou?
+                </p>
+            </div>
+            <p class="tag"><span class="fa-solid fa-tag"></span> kvantová fyzika</p>
+        </div>
+        <div class="task">
+            <h2 class="task-headline task-headline-bonus"><span class="fa-regular fa-star"></span> Bonusová úloha<small class="task-points">(? body)</small></h2>
+            <div>
+                <p class="task-text">
+                    Vypočítejte, jaký výkon bychom museli čerpat z přílivových elektráren, aby se Měsíc přestal oddalovat od Země. Počítejte, že se Měsíc od Země oddaluje rychlostí $4\,\mathrm{cm}$ za rok.
+                </p>
+            </div>
+            <p class="tag"><span class="fa-solid fa-tag"></span> astronomie</p>
         </div>
     </div>
-
 </body>
 
 </html>

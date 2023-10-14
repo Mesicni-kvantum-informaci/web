@@ -350,3 +350,13 @@ body {
 mjx-container[display="true"] {
     line-height: 0 !important;
 }
+
+.temp-img-class {
+    max-width: 100%;
+    max-height: 300px;
+    margin: auto;
+}
+
+.answer{
+    margin-left: 2%;
+}
