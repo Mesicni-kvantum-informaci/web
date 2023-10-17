@@ -360,3 +360,15 @@ mjx-container[display="true"] {
 .answer{
     margin-left: 2%;
 }
+
+.deadline{
+    font-style: italic;
+    margin-left: 5%;
+    font-size: 14pt;
+    margin-bottom: 20px;
+}
+
+.headline{
+    text-align: center;
+    font-size: 30pt;
+}
